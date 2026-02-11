@@ -1,0 +1,41 @@
+.btn{
+
+border: 2px solid black;
+width: 100px;
+height: 40px;
+background-color: rgb(9, 28, 242);
+
+}
+
+.submit{
+
+    border-radius: 10px;
+}
+
+li{
+   width: 200px;
+   background-color: rgb(158, 182, 237);
+   display: flex;
+   justify-content: space-between;
+    margin: 5px;
+   padding: 5px;
+    
+    
+   
+}
+.dlt{
+    position: absolute;
+    top:5px;
+    right: 5px;     
+    background-color: red;
+    color: white;
+    width:15px;
+    height: 15px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 5px;
+    border: none;
+}
