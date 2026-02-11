@@ -1,350 +1,91 @@
-// console.log("Hello, World!");
-// console.log(document)
-
-// const para = document.querySelector("p")
-
-// para.innerText="THIS IS UPDATED PARAGRAPH TEXT"
-// console.log(para.innerText);
-
-// const para = document.getElementsByClassName("para") //return html collection
-// para[0].innerText="THIS IS UPDATED PARAGRAPH TEXT"
-// para[1].style.color="red"
-// console.log(para);
-
-// const para = document.querySelectorAll(".para") //return node list 
-//  para[0].innerText="THIS IS UPDATED PARAGRAPH TEXT"
-//  para[1].style.color="red"
-//  console.log(para);
-
-//  let arr= [1,2,3,4,5]
-//  const newArr= arr.forEach((ele)=>console.log(ele))
-
-// const container = document.querySelector(".container") 
-// container.innerHTML= "<h1>This is a heading</h1><p>This is a paragraph inside container div</p>"
-// console.log(container)
-
-// const btn = document.querySelector("button");
-// btn.classList.add("btn")
-// btn.classList.remove("btn")
-// btn.classList.toggle("btn")
-
-// function printMessage(){
-//     console.log("Button Clicked");
-// }
-
-// btn.addEventListener("click", printMessage)
-// btn.removeEventListener("click", printMessage)
-// btn.addEventListener("click", ()=>console.log("Anonymous Function Called"))
-
-
-// function  startTimer(){
-//     console.log("Timer Started");
-// }
-
-// const btn = document.querySelector(".click");
-// btn.addEventListener("click", startTimer);
-
-
-// function stopTimer(){
-//     console.log("Timer Stopped");
-//     btn.removeEventListener("click", startTimer);
-// }
-// const stopBtn = document.querySelector(".stop");
-// stopBtn.addEventListener("click", stopTimer);
-
-
-// function message(){
-//     console.log("Button Clicked");
-// }
-
-// const click = document.querySelector(".click");
-// click.addEventListener("click", message);
-
-// const stop = document.querySelector(".stop");
-// stop.addEventListener("click", ()=>{
-//     console.log("Button Stopped");
-//     click.removeEventListener("click", message);
-// });
-
-// function message(){
-//     console.log("Button Clicked");
-// }
-
-// const click = document.querySelector(".click");
-// click.addEventListener("click", message);
-// click.addEventListener("mouseover", ()=>{
-//     console.log("Hovering over Click button");
-// });
-
-
-// const stop = document.querySelector(".stop");
-// stop.addEventListener("click", ()=>{
-//     console.log("Button Stopped");
-//     click.removeEventListener("click", message);
-// });
-// stop.addEventListener("mouseover", ()=>{
-//     console.log("Hovering over Stop button");
-// });
-
-
-
-// const click = document.querySelector(".click");
-
-// function message(event){
-
-//     console.log(event.key);
-//     console.log("Button Clicked");
-
-// }
-
-// click.addEventListener("keyup", message);
-
-
-
-// const form = document.querySelector("form");
-// form.addEventListener("submit", (event)=>{
-//     event.preventDefault();
-//     console.log("Form Submitted");
-// });
-
-// console.log("Script loaded");
-
-// window.addEventListener("load", ()=>{
-//     console.log("All resources finished loading!");
-// });
-
-// console.log(a); 
-// // console.log(b); 
-
-
-// var a = 10;
-// let b = 20;
-
-// console.log(a); 
-// console.log(b); 
-
-// function test(){
-//     let c = 30;
-//     console.log(c);
-//     console.log("Inside Test Function");
-// }
-
-// test();
-
-// function greet (){
-
-//     var message = "Hello, user!";
-//     console.log(message);
-// }
-// greet();
-// console.log(message);
-
-
-// function first (){
-//     second ();
-// }
-// function second (){
-//     third ();
-// }
-// function third (){
-//     console.trace()
-// }
-// first ();
-
-
-// console.log("first line");
-// setTimeout(()=>{console.log("second line")},2000);
-// console.log("second line");
-// console.log("second line");
-// console.log("second line");
-// console.log("second line");
-// console.log("second line");
-// console.log("second line");
-// console.log("second line");
-// console.log("second line");
-
-
-
-// const timerId=setInterval(() => {
-//     console.log("after 3 seconds")
-// }, 1000);
-// console.log(timerId);
-// setTimeout(() => {
-//     clearInterval(timerId)
-    
-// },10*1000)
-
-// var hello=1
-// const timerId=setInterval(()=>{
-//     hello+=1
-//     console.log(hello)
-// },1000)
-
-// console.log(timerId)
-// setTimeout(()=>{
-//     clearInterval(timerId)
-// },10*1000)       
-
-// let count=1
-
-// const timerId=setInterval(()=>{
-//     if(count===10)clearInterval(timerId)
-//     console.log(count)
-//     count+=1
-
-// },1000)
-
-// console.log("before timeout")
-// setTimeout(()=>{
-//     console.log("inside timeout")
-// },0)
-// console.log("after timeout")
-
-// const name=document.querySelector("#name")
-// const btn=document.querySelector(".btn")
-// const list=document.querySelector(".list")
-
-// btn.addEventListener("click",()=>{
-
-//     if(name.value==="")return
-//     const li=document.createElement("li")
-//     const dlt=document.createElement("button")
-
-
-//     dlt.innerText="Delete"
-//     li.innerText=name.value;
-
-
-//     dlt.addEventListener("click",()=>{
-//         list.removeChild(li)
-//     })
-
-
-//     list.appendChild(li)
-//     li.appendChild(dlt)
-
-    
-//     name.value=""
-// })
-
-
-
-
-
-// console.log("Starting dinner...");
-
-// setTimeout(() => {
-
-// console.log("Dinner done!");
-
-// console.log("Getting ready to go out...");
-
-// setTimeout(() => {
-
-// console.log("Going to the playground!");
-
-// }, 1000); // after dinner
-
-// }, 1500); // dinner time
-
-// }, 2000); // homework time
-
-// function finishhomework(callback){
-//     comsole.log("starting homework...");
-//     setTimeout(()=>{
-//         console.log("Homework done!");
-//             callback();
-//     },2000)
-// }
-// function goToPlayground(){
-//     console.log("Getting ready to go out...");
-//     setTimeout(() => {
-//     console.log("Going to the playground!");
-//     }, 1000); 
-// }
-// const p=new Promise((resolve,reject)=>{
-//     let done=false
-//     setTimeout(()=>{
-//         if(done){
-//             resolve("Homework done!")
-//         }else{
-//             reject("Homework not done!")
-//         }
-//     },2000)
-// })
-// console.log("Starting homework...")
-// p.then((message)=>{
-//     console.log(message);
-// }).catch((error)=>{
-//     console.log(error);
-// })
-// function eatdinner(){
-//     return new Promise((resolve)=>{
-//         console.log("Starting dinner...");
-//         setTimeout(()=>{
-//             resolve("Dinner done!")
-//         },1500)
-//     })}
-// function gotoPlayground(){
-//     return new Promise((resolve)=>{
-//         console.log("Getting ready to go out...");
-//         setTimeout(()=>{
-//             resolve("Going to the playground!")
-//         },1000)
-//     })}
-// homeworkdone=false
-// eatdinner()
-// .then((dinnerMessage)=>{
-//     console.log(dinnerMessage);
-//     return gotoPlayground()
-// }   )
-// .then((playgroundMessage)=>{
-//     console.log(playgroundMessage);
-
-// })
-// .catch((error)=>{
-//     console.log(error);
-// })                   
-
-// async function performTasks(){
-//     try{
-//         const dinnerMessage=await eatdinner()
-//         console.log(dinnerMessage);
-//         const playgroundMessage=await gotoPlayground()
-//         console.log(playgroundMessage);
-//     }catch(error){
-//         console.log(error);
-//     }
-// }
-
-// performTasks()                                  
-
-const card=document.querySelector("#name")
-card.addEventListener("click",()=>{
-    card.style.backgroundColor="red"    
-})
-const btn=document.querySelector(".btn")
-const list=document.querySelector(".list")
-
-document.addEventListener("keydown", (e) => {
-    if(e.key==="Enter")
-    {
-        if(card.value==="")return
-        const li=document.createElement("li")
-        const dlt=document.createElement("button")
-        dlt.innerText="Delete"
-        li.innerText=card.value
-        dlt.addEventListener("click",()=>{
-            list.removeChild(li)
+const form = document.querySelector('.form')
+    const eventCards = document.querySelector('.cards')
+
+    const clearBtn = document.querySelector('#clearEvents')
+    const sampleBtn = document.querySelector('#sampleEvents')
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+
+        let title = eventTitle.value
+        let date = eventDate.value
+        let cat = category.value
+        let desc = description.value
+
+        const card = document.createElement('div')
+        card.classList.add('card')
+        card.innerHTML = `
+        <h3>${title}</h3>
+        <p> 📆${date}</p>
+        <button>${cat}</button>
+        <p>${desc}</p>
+        <div class="dlt">x</div>
+        `
+
+        eventCards.appendChild(card)
+
+        // delete single card
+        const dlt = card.querySelector('.dlt')
+        dlt.addEventListener('click', () => {
+            card.remove()
         })
-        list.appendChild(li)
-        li.appendChild(dlt)
-        card.value=""
-    }
-})
-document.querySelector('.clearall').addEventListener("click",()=>{
-    document.querySelectorAll(".list li").forEach((li)=>{
-        li .remove()
 
+        form.reset()
     })
-})
+
+
+    // CLEAR ALL EVENTS BUTTON
+    clearBtn.addEventListener('click', () => {
+        eventCards.innerHTML = ""   // removes all cards
+    })
+
+
+    //ADD SAMPLE EVENTS BUTTON
+    sampleBtn.addEventListener('click', () => {
+
+        const samples = [
+            {
+                title: "Tech Conference",
+                date: "2026-03-10",
+                cat: "Conference",
+                desc: "Annual technology conference"
+            },
+            {
+                title: "Web Dev Workshop",
+                date: "2026-03-15",
+                cat: "Workshop",
+                desc: "Hands-on coding session"
+            },
+            {
+                title: "Startup Meetup",
+                date: "2026-03-20",
+                cat: "Meetup",
+                desc: "Networking with founders"
+            }
+        ]
+
+        samples.forEach(ev => {
+            const card = document.createElement('div')
+            card.classList.add('card')
+            card.innerHTML = `
+            <h3>${ev.title}</h3>
+            <p>${ev.date}</p>
+            <button>${ev.cat}</button>
+            <p>${ev.desc}</p>
+            <div class="dlt">x</div>
+            `
+
+            eventCards.appendChild(card)
+
+            const dlt = card.querySelector('.dlt')
+            dlt.addEventListener('click', () => {
+                card.remove()
+            })
+        })
+    })
+
+
+    // keyboard log (same as before)
+    document.addEventListener('keydown', (e) => {
+        console.log(e.key)
+    })
